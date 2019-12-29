@@ -1,13 +1,13 @@
-import SimCreate from "./components/SimCreate";
-import SimList from "./components/SimList";
+import LingkupCreate from "./components/LingkupCreate";
+import LingkupList from "./components/LingkupList";
 
 const identities = {
-  name: "sim",
+  name: "lingkup",
   options: {
-    label: "SIM"
+    label: "Lingkup"
   },
-  create: SimCreate,
-  list: SimList
+  create: LingkupCreate,
+  list: LingkupList
 };
 
 const fields = {
@@ -15,13 +15,9 @@ const fields = {
     source: "id",
     label: "Id"
   },
-  pada_tanggal: {
-    source: "pada_tanggal",
-    label: "Pada Tanggal"
-  },
-  berlaku_hingga: {
-    source: "berlaku_hingga",
-    label: "Berlaku Hingga"
+  nama: {
+    source: "nama",
+    label: "Nama"
   },
   created: {
     source: "created",

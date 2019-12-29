@@ -1,13 +1,13 @@
-import SimCreate from "./components/SimCreate";
-import SimList from "./components/SimList";
+import JenisPomdamCreate from "./components/JenisPomdamCreate";
+import JenisPomdamList from "./components/JenisPomdamList";
 
 const identities = {
-  name: "sim",
+  name: "jenis_pomdam",
   options: {
-    label: "SIM"
+    label: "Jenis Pomdam"
   },
-  create: SimCreate,
-  list: SimList
+  create: JenisPomdamCreate,
+  list: JenisPomdamList
 };
 
 const fields = {
@@ -15,13 +15,9 @@ const fields = {
     source: "id",
     label: "Id"
   },
-  pada_tanggal: {
-    source: "pada_tanggal",
-    label: "Pada Tanggal"
-  },
-  berlaku_hingga: {
-    source: "berlaku_hingga",
-    label: "Berlaku Hingga"
+  nama: {
+    source: "nama",
+    label: "Nama"
   },
   created: {
     source: "created",
